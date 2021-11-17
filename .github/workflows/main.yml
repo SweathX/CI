@@ -16,6 +16,6 @@ jobs:
     name: first step
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
       - run: gcc main.c
       - run: ./a.out
