@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v2
-      - run: gcc *c
+      - run: gcc main.c
       - run: ./a.out
