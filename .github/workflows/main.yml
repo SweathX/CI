@@ -14,7 +14,7 @@ on:
 jobs:
   check_bats_version:
     name: first step
-    runs-on: ubuntu 18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v2
       - run: gcc *c
