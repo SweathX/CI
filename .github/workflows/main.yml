@@ -12,5 +12,10 @@ on:
   workflow_dispatch:
       
 jobs:
-  run:
-    runs-on: ubuntu-18.04
+  check_bats_version:
+    name: first step
+    runs-on: ubuntu 18.04
+    steps:
+      - uses: actions/setup-node@v2
+      - run: gcc *c
+      - run: ./a.out
